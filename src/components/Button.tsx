@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
 
-// Define ButtonProps for better TypeScript support
 interface ButtonProps {
-  icon?: React.ReactNode; // Icon to display (optional)
-  label: string; // Button text
-  styles?: string; // Additional classes (optional)
-  disabled?: boolean; // Disabled state (optional)
+  icon?: React.ReactNode;
+  label: string;
+  styles?: string;
+  disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({

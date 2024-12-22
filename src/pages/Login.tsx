@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FaArrowUp, FaBitbucket, FaGithub } from "react-icons/fa";
-import Button from "./Button";
+import Button from "../components/Button";
 import { VscAzureDevops } from "react-icons/vsc";
 import { LiaKeySolid } from "react-icons/lia";
-const HeroSection = () => {
+const Login = () => {
   const [selected, setSelected] = useState<boolean>(true);
   return (
     <>
@@ -141,4 +141,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Login;
