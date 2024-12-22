@@ -1,5 +1,5 @@
 import { repos } from "../Content";
-
+import databaseIcon from "../assets/icons/database.svg";
 const RepoCard = () => {
   return (
     <>
@@ -24,7 +24,7 @@ const RepoCard = () => {
                 </div>{" "}
                 <div className="flex items-center gap-2 ">
                   <img
-                    src="/public/icons/database.svg"
+                    src={databaseIcon}
                     alt="database-image"
                     height={12}
                     width={10.5}

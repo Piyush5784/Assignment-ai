@@ -1,12 +1,10 @@
-import HomeIcon from "../public/icons/home.svg";
-import BookIcon from "../public/icons/book.svg";
-import CloseIcon from "../public/icons/close.svg";
-import GearIcon from "../public/icons/gear.svg";
-import CodeIcon from "../public/icons/code.svg";
-import PhoneIcon from "../public/icons/phone.svg";
-import SignOutIcon from "../public/icons/sign-out.svg";
-import CloudIcon from "../public/icons/cloud.svg";
-import ChevronDownIcon from "../public/icons/chevron-down.svg";
+import HomeIcon from "./assets/icons/home.svg";
+import BookIcon from "./assets/icons/book.svg";
+import GearIcon from "./assets/icons/gear.svg";
+import CodeIcon from "./assets/icons/code.svg";
+import PhoneIcon from "./assets/icons/phone.svg";
+import SignOutIcon from "./assets/icons/sign-out.svg";
+import CloudIcon from "./assets/icons/cloud.svg";
 
 export const lists = [
   {
@@ -100,7 +98,6 @@ export const repos = [
     name: "design-system",
     visiblity: "Public",
     languageUsed: "React",
-    imageLink: "",
     size: "7320",
     lastUpdatedDate: "1",
   },
@@ -108,7 +105,6 @@ export const repos = [
     name: "codeant-ci-app",
     visiblity: "Private",
     languageUsed: "Javascript",
-    imageLink: "",
     size: "5871",
     lastUpdatedDate: "2",
   },
@@ -116,7 +112,6 @@ export const repos = [
     name: "analytics-dashboard",
     visiblity: "Private",
     languageUsed: "Python",
-    imageLink: "",
     size: "4521",
     lastUpdatedDate: "5",
   },
@@ -124,7 +119,6 @@ export const repos = [
     name: "mobile-app",
     visiblity: "Public",
     languageUsed: "Swift",
-    imageLink: "",
     size: "3096",
     lastUpdatedDate: "3",
   },
@@ -132,7 +126,6 @@ export const repos = [
     name: "e-commerce-platform",
     visiblity: "Private",
     languageUsed: "Java",
-    imageLink: "",
     size: "6210",
     lastUpdatedDate: "6",
   },
@@ -140,7 +133,6 @@ export const repos = [
     name: "blog-website",
     visiblity: "Public",
     languageUsed: "HTML/CSS",
-    imageLink: "",
     size: "6210",
     lastUpdatedDate: "6",
   },
@@ -148,7 +140,6 @@ export const repos = [
     name: "social-network",
     visiblity: "Private",
     languageUsed: "PHP",
-    imageLink: "",
     size: "5432",
     lastUpdatedDate: "7",
   },
