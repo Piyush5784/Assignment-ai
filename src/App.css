@@ -3,3 +3,14 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.boxShadow {
+  box-shadow: 0px 1px 2px 0px var(--ColorsEffectsShadowsshadow-xs),
+    0px -2px 0px 0px var(--ColorsEffectsShadowsshadow-skeumorphic-inner) inset,
+    0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-border)
+      inset;
+}
+
+.buttonShadow {
+  box-shadow: "inset 1 2px 4px rgba(1, 1, 1, 0.05)";
+}

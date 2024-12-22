@@ -1,49 +1,19 @@
 import { useState } from "react";
-import { FaBook } from "react-icons/fa";
-import { HiOutlineHome } from "react-icons/hi";
-import { IoIosCloudOutline } from "react-icons/io";
 import {
-  IoCallOutline,
   IoChevronDownOutline,
   IoChevronUpOutline,
-  IoSettingsOutline,
+  IoSearchOutline,
 } from "react-icons/io5";
-import { LuCodeXml, LuLogOut, LuMenu } from "react-icons/lu";
+import { LuMenu, LuRefreshCw } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
+import { lists } from "../Content";
+import { FaPlus } from "react-icons/fa";
+import { FiPlus } from "react-icons/fi";
 
 const Dashboard = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const lists = [
-    {
-      title: "Repositories",
-      icon: <HiOutlineHome size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "AI Code Review",
-      icon: <LuCodeXml size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "Cloud Security",
-      icon: <IoIosCloudOutline size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "How to Use",
-      icon: <FaBook size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "Settings",
-      icon: <IoSettingsOutline size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "Support",
-      icon: <IoCallOutline size={20} className="text-[#414651]" />,
-    },
-    {
-      title: "Logout",
-      icon: <LuLogOut size={20} className="text-[#414651]" />,
-    },
-  ];
+
   return (
     <>
       <div className="flex h-screen items-start">
@@ -59,7 +29,7 @@ const Dashboard = () => {
               showMenu && "border-b"
             } md:hidden border-gray`}
           >
-            <div className="flex  ">
+            <div className="flex border-b border-gray ">
               <div className="h-12 w-full flex  p-3 items-center justify-start gap-3">
                 <img src="/logo.png" height={25} width={25} alt="logo" />
                 <p className=" font-inter text-xl font-light">CodeAnt AI</p>
@@ -68,19 +38,19 @@ const Dashboard = () => {
                 onClick={() => setShowMenu(!showMenu)}
                 className="flex items-center justify-center pr-4"
               >
-                {!showMenu ? <RxCross2 size={24} /> : <LuMenu size={24} />}
+                {showMenu ? <RxCross2 size={24} /> : <LuMenu size={24} />}
               </div>
             </div>
 
             <div
-              className={`absolute  duration-200 ${
-                !showMenu ? "top-12" : "-top-96"
-              }  bg-[#ffffff]  w-full  `}
+              className={`fixed  duration-200 ${
+                showMenu ? "top-12" : "-top-96"
+              }  bg-[#ffffff]  w-full  z-50`}
             >
               <div className="">
                 <div
                   className={`relative flex duration-200 flex-col ${
-                    showMenu ? "bottom-96" : "bottom-0"
+                    !showMenu ? "bottom-96" : "bottom-0"
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -121,7 +91,33 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className={` w-full h-full`}>this is repositiories</div>
+          <div className={` font-inter w-full h-full pl-3 pt-4`}>
+            <p className="font-semibold text-xl">Repositories</p>
+            <p className="font-light text-[0.8rem]">33 total repositories</p>
+
+            <div className=" flex gap-2 pt-3">
+              <button
+                className="p-2 py-1.5 border-[1.5px] border-[#D5D7DA] shadow-[0px_1px_2px_0px_#0A0D120D] rounded-md text-sm font-extralight flex items-center justify-center gap-2 "
+                style={{ boxShadow: "inset 1 2px 4px rgba(1, 1, 1, 0.05)" }}
+              >
+                <LuRefreshCw />
+                Refresh All
+              </button>
+              <button className="bg-primaryBlue text-white rounded-md p-2 py-1.5  text-sm font-extralight flex items-center justify-center gap-1">
+                <FiPlus size={16} />
+                Add Repository
+              </button>
+            </div>
+
+            <div className="relative mt-3 w-[95%] flex items-center">
+              <input
+                type="text"
+                placeholder="Search Repositories"
+                className="border-[1.5px] placeholder:text-[#414651] p-2 py-1.5 font-normal text-sm border-[#D5D7DA] text-[#181D27] rounded-lg w-full pl-8 focus:border-primaryBlue"
+              />
+              <IoSearchOutline className="absolute left-3 text-[#181D27]" />
+            </div>
+          </div>
         </div>
       </div>
     </>

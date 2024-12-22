@@ -20,6 +20,9 @@ export default {
         bold: "700",
         extrabold: "800",
       },
+      fontSize: {
+        sm: "0.8rem",
+      },
     },
   },
   plugins: [],
