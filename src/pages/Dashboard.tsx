@@ -1,8 +1,10 @@
 import Reporitories from "../components/Reporitories";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="flex h-screen items-start">
@@ -16,9 +18,8 @@ const Dashboard = () => {
           className="w-full md:p-4 duration-300"
           style={{ backgroundColor: "#FAFAFA" }}
         >
-          <Navbar />
-
-          <Reporitories />
+          <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
+          <Reporitories showMenu={showMenu} />
         </div>
       </div>
     </>

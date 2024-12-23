@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className="flex flex-col">
         <div className="h-12 w-full flex  p-7 pl-4 items-center justify-start gap-3">
           <img src="/logo.png" height={25} width={25} alt="logo" />
-          <p className=" font-inter text-xl font-light">CodeAnt AI</p>
+          <p className=" font-inter text-xl font-light Satoshi">CodeAnt AI</p>
         </div>
         <div className="flex items-center justify-center">
           <div className={`relative w-[88%] `}>

@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
         className={`border-[#D8DAE5] border rounded-lg flex items-center justify-center gap-2 h-14 w-[20rem] md:w-[27.875rem] transition 
       ${
         disabled
-          ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+          ? "bg-gray-200  cursor-not-allowed"
           : "bg-white hover:bg-gray-100"
       } ${styles}`}
       >

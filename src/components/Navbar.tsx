@@ -4,8 +4,13 @@ import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 import { lists } from "../Content";
 
-const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+const Navbar = ({
+  showMenu,
+  setShowMenu,
+}: {
+  showMenu: boolean;
+  setShowMenu: (show: boolean) => void;
+}) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   return (
     <>
@@ -14,7 +19,7 @@ const Navbar = () => {
         <div className="flex border-b border-gray ">
           <div className="h-12 w-full flex  p-3 items-center justify-start gap-3">
             <img src="/logo.png" height={25} width={25} alt="logo" />
-            <p className=" font-inter text-xl font-light">CodeAnt AI</p>
+            <p className=" font-inter text-xl font-light Satoshi">CodeAnt AI</p>
           </div>
           <div
             onClick={() => setShowMenu(!showMenu)}
@@ -54,7 +59,7 @@ const Navbar = () => {
               </div>
 
               <div
-                className={`relative border-b border-gray duration-200 pb-3`}
+                className={`relative border-b border-gray duration-200 pb-3 `}
               >
                 {lists.map((item, index) => (
                   <div

@@ -2,11 +2,13 @@ import RepoCard from "./RepoCard";
 import plusIcon from "../assets/icons/plus.svg";
 import RefreshIcon from "../assets/icons/refresh.svg";
 import SearchIcon from "../assets/icons/search.svg";
-const Reporitories = () => {
+const Reporitories = ({ showMenu }: { showMenu: boolean }) => {
   return (
     <>
       <div
-        className={`font-inter bg-[#ffffff] w-full h-full  pt-4 md:border md:border-gray md:rounded-lg `}
+        className={`font-inter ${
+          showMenu ? "bg-[#6C6C6C4D]" : "bg-[#ffffff]"
+        } w-full h-full  pt-4 md:border md:border-gray md:rounded-lg  `}
       >
         <div className="pl-3">
           <div className="flex flex-col md:flex-row md:justify-between">

@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-.root {
+body {
   font-family: "Inter";
 }
 .boxShadow {
@@ -12,6 +12,17 @@
     0px -2px 0px 0px var(--ColorsEffectsShadowsshadow-skeumorphic-inner) inset,
     0px 0px 0px 1px var(--ColorsEffectsShadowsshadow-skeumorphic-inner-border)
       inset;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Satoshi {
+  font-family: "Satoshi", sans-serif;
 }
 
 .buttonShadow {
