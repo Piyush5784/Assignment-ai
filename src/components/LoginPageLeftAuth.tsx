@@ -3,7 +3,7 @@ const LoginPageLeftAuth = () => {
   return (
     <>
       {" "}
-      <div className="h-full border-gray border-r md:flex items-start pt-48 justify-end hidden ">
+      <div className="h-full border-gray border-r md:flex items-start pt-48 pl-20 justify-end hidden ">
         <div className="border  shadow-[0_0_15px_rgba(0,0,0,0.1)] border-gray bg-[#ffffff] rounded-2xl font-inter">
           <div className="flex border-b border-gray p-3 items-center justify-center gap-3">
             <img src="/logo.png" height={30} width={30} alt="logo" />
@@ -42,7 +42,7 @@ const LoginPageLeftAuth = () => {
 
           <div className="pl-5">
             <p className="font-bold text-sm pb-2">Issues Fixed</p>
-            <p className="font-bold text-3xl font-inter">500k+</p>
+            <p className="font-bold text-3xl font-inter">500K+</p>
           </div>
         </div>
       </div>

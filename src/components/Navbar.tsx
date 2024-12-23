@@ -1,9 +1,8 @@
-import { useState } from "react";
-import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
 import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 import { lists } from "../Content";
-
+import { Link } from "react-router";
+import DownIcon from "../assets/icons/chevron-down.svg";
 const Navbar = ({
   showMenu,
   setShowMenu,
@@ -11,16 +10,18 @@ const Navbar = ({
   showMenu: boolean;
   setShowMenu: (show: boolean) => void;
 }) => {
-  const [showSuggestions, setShowSuggestions] = useState(false);
   return (
     <>
       {" "}
       <div className={` bg-[#ffffff] border-b md:hidden border-gray`}>
         <div className="flex border-b border-gray ">
-          <div className="h-12 w-full flex  p-3 items-center justify-start gap-3">
+          <Link
+            to={"/"}
+            className="h-12 w-full flex  p-3 items-center justify-start gap-3"
+          >
             <img src="/logo.png" height={25} width={25} alt="logo" />
             <p className=" font-inter text-xl font-light Satoshi">CodeAnt AI</p>
-          </div>
+          </Link>
           <div
             onClick={() => setShowMenu(!showMenu)}
             className="flex items-center justify-center pr-4"
@@ -41,20 +42,16 @@ const Navbar = ({
               }`}
             >
               <div className="flex items-center justify-center">
-                <div
-                  className={`relative w-[96%] `}
-                  onClick={() => setShowSuggestions(!showSuggestions)}
-                >
+                <div className={`relative w-[96%] `}>
                   <input
                     type="text"
                     placeholder="UtkarshDhairyaPanwar"
                     className="border shadow-xs placeholder:text-[#181D27] p-2 py-1.5 font-normal text-[0.8rem] border-[#D5D7DA] text-[#181D27] rounded-lg w-full  shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] pr-10"
                   />
-                  {showSuggestions ? (
-                    <IoChevronDownOutline className="absolute text-[#181D27] right-2 top-1/2 transform -translate-y-1/2 " />
-                  ) : (
-                    <IoChevronUpOutline className="absolute text-[#181D27] right-2 top-1/2 transform -translate-y-1/2 " />
-                  )}
+                  <img
+                    src={DownIcon}
+                    className="absolute text-[#181D27] pr-1.5 right-2 top-1/2 transform -translate-y-1/2 "
+                  />
                 </div>
               </div>
 
