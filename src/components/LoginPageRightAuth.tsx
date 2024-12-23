@@ -35,7 +35,7 @@ const LoginPageRightAuth = () => {
                 onClick={() => setSelected(false)}
                 className={` w-40 md:w-[300px] md:py-3 py-2 md:text-[1.2rem] text-center  rounded-lg text-white duration-300 font-semibold ${
                   !selected
-                    ? "bg-primaryBlue "
+                    ? "bg-primaryBlue text-[#ffffff]"
                     : "text-secondaryBlack hover:bg-gray-100"
                 }  `}
               >
