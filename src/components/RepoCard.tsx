@@ -1,6 +1,6 @@
 import { repos } from "../Content";
 import databaseIcon from "../assets/icons/database.svg";
-const RepoCard = () => {
+const RepoCard = ({ showMenu }: { showMenu: boolean }) => {
   return (
     <>
       {" "}
@@ -10,7 +10,11 @@ const RepoCard = () => {
             <div className="  flex flex-col pl-3 pt-2  border-t border-[#D5D7DA]">
               <div className="flex gap-2">
                 <p className="font-medium ">{repo.name}</p>
-                <div className="rounded-full h-6 w-14 flex items-center justify-center border text-[#175CD3] bg-[#EFF8FF] border-[#B2DDFF] text-sm">
+                <div
+                  className={`rounded-full h-6 w-14 flex items-center justify-center border text-[#175CD3] bg-[#EFF8FF] border-[#B2DDFF] text-sm ${
+                    showMenu && "opacity-60"
+                  }`}
+                >
                   {repo.visiblity}
                 </div>
               </div>
@@ -20,7 +24,9 @@ const RepoCard = () => {
                   <p className="md:text-[13px]  text-[11.5px] ">
                     {repo.languageUsed}
                   </p>
-                  <div className="h-[8px]  w-[8px] rounded-full bg-[#1570EF]"></div>
+                  <div
+                    className={`h-[8px]  w-[8px] rounded-full bg-[#1570EF] `}
+                  ></div>
                 </div>{" "}
                 <div className="flex items-center gap-2 ">
                   <img

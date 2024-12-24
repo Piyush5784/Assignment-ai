@@ -46,7 +46,7 @@ const Navbar = ({
                   <input
                     type="text"
                     placeholder="UtkarshDhairyaPanwar"
-                    className="border shadow-xs placeholder:text-[#181D27] p-2 py-1.5 font-normal text-[0.8rem] border-[#D5D7DA] text-[#181D27] rounded-lg w-full  shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] pr-10"
+                    className="border shadow-xs placeholder:text-[#181D27] p-2 py-1.5 text-[16px] font-normal  border-[#D5D7DA] text-[#181D27] rounded-lg w-full  shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] pr-10"
                   />
                   <img
                     src={DownIcon}
@@ -56,12 +56,12 @@ const Navbar = ({
               </div>
 
               <div
-                className={`relative border-b border-gray duration-200 pb-3 `}
+                className={`relative border-b border-gray duration-200 pb-6 pt-2 pl-2.5 `}
               >
                 {lists.map((item, index) => (
                   <div
                     key={index}
-                    className="flex w-full font-inter  font-medium  items-center gap-2 p-2 pl-4 "
+                    className="flex w-full font-inter  font-medium  items-center gap-2 pl-3 px-12 py-[0.53rem]"
                   >
                     <div>{item.icon}</div>
                     <p className="font-semibold text-[0.8rem] text-[#414651]">

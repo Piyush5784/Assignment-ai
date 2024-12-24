@@ -7,9 +7,13 @@ const Dashboard = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-      <div className="flex h-screen items-start">
+      <div
+        className={`flex h-screen items-start ${
+          showMenu ? "overflow-hidden" : "overflow-auto"
+        }`}
+      >
         <div
-          className={` duration-300 relative md:w-[242px] w-0 hidden md:flex border-r border-gray h-full`}
+          className={`duration-300 relative md:w-[242px] w-0 hidden md:flex border-r border-gray h-full`}
         >
           <Sidebar />
         </div>

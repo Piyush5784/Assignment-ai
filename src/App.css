@@ -11,6 +11,12 @@
       inset;
 }
 
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
 @font-face {
   font-family: "Satoshi";
   src: url("/fonts/Satoshi-Regular.otf") format("opentype");
