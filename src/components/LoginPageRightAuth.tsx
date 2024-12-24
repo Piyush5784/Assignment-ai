@@ -26,7 +26,7 @@ const LoginPageRightAuth = () => {
                 className={`md:w-[300px] px-14 md:py-4 py-1 font-inter md:text-[1.2rem] rounded-lg text-white duration-300 font-semibold ${
                   selected
                     ? "bg-primaryBlue text-[#ffffff]"
-                    : "text-secondaryBlack hover:bg-gray-100"
+                    : "text-[#414651] hover:bg-gray-100"
                 }  `}
               >
                 SASS
@@ -36,7 +36,7 @@ const LoginPageRightAuth = () => {
                 className={` w-40 md:w-[300px] md:py-3 py-2 md:text-[1.2rem] text-center  rounded-lg text-white duration-300 font-semibold ${
                   !selected
                     ? "bg-primaryBlue text-[#ffffff]"
-                    : "text-secondaryBlack hover:bg-gray-100"
+                    : "text-[#414651] hover:bg-gray-100"
                 }  `}
               >
                 Self Hosted
