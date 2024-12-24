@@ -23,7 +23,7 @@ const LoginPageRightAuth = () => {
             <div className="border-gray bg-[#FAFAFA] border rounded-lg flex">
               <button
                 onClick={() => setSelected(true)}
-                className={`md:w-[300px] px-14 md:py-4 py-1 font-inter md:text-[1.2rem] rounded-lg text-white duration-300 font-semibold ${
+                className={`md:w-[300px] px-14 md:py-4 py-1 font-inter md:text-[1.2rem] rounded-lg  duration-300 font-semibold ${
                   selected
                     ? "bg-primaryBlue text-[#ffffff]"
                     : "text-[#414651] hover:bg-gray-100"
@@ -33,7 +33,7 @@ const LoginPageRightAuth = () => {
               </button>
               <button
                 onClick={() => setSelected(false)}
-                className={` w-40 md:w-[300px] md:py-3 py-2 md:text-[1.2rem] text-center  rounded-lg text-white duration-300 font-semibold ${
+                className={` w-40 md:w-[300px] md:py-3 py-2 md:text-[1.2rem] text-center  rounded-lg  duration-300 font-semibold ${
                   !selected
                     ? "bg-primaryBlue text-[#ffffff]"
                     : "text-[#414651] hover:bg-gray-100"
