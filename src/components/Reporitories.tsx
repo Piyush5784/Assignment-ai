@@ -8,9 +8,9 @@ const Reporitories = ({ showMenu }: { showMenu: boolean }) => {
       <div
         className={`font-inter ${
           showMenu ? "bg-[#6C6C6C4D]" : "bg-[#ffffff]"
-        } w-full h-full  pt-4 md:border md:border-gray md:rounded-lg  `}
+        } w-full h-full  pt-4 md:border border md:border-[#E9EAEB] md:rounded-lg  `}
       >
-        <div className="pl-3">
+        <div className="pl-3 ">
           <div className="flex flex-col md:flex-row md:justify-between">
             <div>
               <p className="font-semibold text-xl">Repositories</p>

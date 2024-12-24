@@ -18,10 +18,7 @@ const Dashboard = () => {
           <Sidebar />
         </div>
 
-        <div
-          className="w-full md:p-4 duration-300"
-          style={{ backgroundColor: "#FAFAFA" }}
-        >
+        <div className="w-full md:p-4 duration-300 bg-[#FAFAFA]">
           <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
           <Reporitories showMenu={showMenu} />
         </div>
