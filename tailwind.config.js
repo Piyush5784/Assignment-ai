@@ -9,7 +9,7 @@ export default {
       secondaryBlack: "#414651",
     },
     fontFamily: {
-      inter: ["Inter", "sans-serif"],
+      inter: ["Inter", "Helvetica"],
     },
     extend: {
       fontWeight: {
